@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+main {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+
+}
+
+fieldset {
+    padding: 2px;
+    border: none;
+}
+
+section#formulario {
+    margin: 30px auto;
+    padding: 5px;
+
+}
+form {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+label {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+.txt {
+    width: 100%;
+    height: 30px;
+
+}
+.botao {
+    background-color:#2196F3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+header {
+    width: 100%;
+    height: 200px;
+    background: radial-gradient(#2196F3, #3D5AFE, #0D47A1) ;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; 
+    
+}
+h1 {
+    height: 30px;
+    width: 100%;
+    font-family: Verdana;
+    color: white; 
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2 {
+    height: 20px;
+    width: 100%;
+    font-family: Verdana;
+    color: white; 
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icone {
+
+    color: #2196F3;
+    font-size: 64px;
+    margin-top: 10px;
+    
+}
+
+.flex {
+    display: flex;
+}
+.flex-end {
+   
+
+    justify-content: center;
+}
+.bola {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 670px;
+    margin-top: 50px;
+}
+
+</style>
+<body>
+    <header >
+        <h1>ME ACHA!</h1>
+        <h2>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2>
+        <div class="icone flex flex-end bola"> <span class="material-icons icone">travel_explore</span></div>
+        
+    </header>
+
+    <main>
+    <section id="formulario" >
+
+        <form method="post" name="cadastro">
+        <fieldset>
+            <label for="cep">Cep</label>
+                <input type="text" required placeholder="Digite seu cep" class="txt" id="cep" name="cep" value="">
+                <label for="rua">Rua</label>
+                <input type="text" class="txt" id="rua" name="rua" value="">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="txt" id="bairro" name="bairro" value="">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="txt" id="cidade" name="cidade" value="">
+                <label for="estado">Estado</label>
+                <input type="text" class="txt" id="uf" name="estado" value="">
+                <input type="button" class="txt botao" name="buscarDados" value="BUSCAR" onclick="pesquisacep()">
+                
+        </fieldset> 
+    </main>
+    
+</body>
+</html>
+
